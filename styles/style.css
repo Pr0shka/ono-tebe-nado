@@ -40,12 +40,15 @@
 
 .address {
   display: flex;
-  justify-content: end;
-  padding-right: 59px;
   line-height: 24.3px;
-
   font-style: normal;
   letter-spacing: 0.18px;
+  font-size: 18px;
+}
+
+.header__address {
+  padding-right: 59px;
+  justify-content: end;
 }
 
 .header__address_no_bullit {
@@ -103,25 +106,27 @@
   display: flex;
   margin-top: 126px;
   z-index: 1;
+  gap: 78px;
+
 }
 
 .cover__description-text {
-  padding-left: 50px;
+
   font-weight: 400;
-  left: 48px;
+
   word-spacing: 18.5px;
-  padding-top: 10px;
+  align-self: center;
+  
   padding-left: 79px;
 }
 
 .bet-button {
+  all: unset;
   font-weight: 500;
   border: 1px solid #fff;
-  right: 0px;
-  margin-right: 50px;
+  align-self: center;
   padding: 12px 32px 11px 31px;
   background-color: transparent;
-  margin-left: 78px;
 }
 
 .bet-button a {
@@ -258,14 +263,8 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.address_footer {
-  display: flex;
-  line-height: 24.3px;
-  letter-spacing: 0.18px;
-  font-size: 18px;
-  letter-spacing: 0.18px;
-  padding-left: 26px;
-  font-style: normal;
+.footer__address {
+padding-left: 27px;
 }
 
 .footer__menu {
