@@ -107,16 +107,14 @@
   margin-top: 126px;
   z-index: 1;
   gap: 78px;
-
 }
 
 .cover__description-text {
-
   font-weight: 400;
 
   word-spacing: 18.5px;
   align-self: center;
-  
+
   padding-left: 79px;
 }
 
@@ -264,7 +262,7 @@
 }
 
 .footer__address {
-padding-left: 27px;
+  padding-left: 27px;
 }
 
 .footer__menu {
