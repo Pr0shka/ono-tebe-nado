@@ -1,18 +1,17 @@
 .header {
   display: grid;
-  margin: 93px 24px 91px 24px;
+  padding: 93px 49px 91px 51px;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   font-size: 18px;
 }
 
 .header__menu {
-  padding-right: 14px;
+  justify-self: start;
 }
 
 .header__links-list {
   display: flex;
-  justify-content: center;
   gap: 32px;
 }
 
@@ -21,17 +20,16 @@
 }
 
 .header__link {
-  text-decoration: none;
-  border-bottom: 1px #000 solid;
   letter-spacing: 0.18px;
+  text-underline-offset: 3px;
 }
 
-.header__links-list-item_no-bullit {
+.header__links-list li:first-child {
   list-style: none;
 }
 
 .header__link_active {
-  border-bottom: 0;
+  text-decoration: none;
 }
 
 .header__logo {
@@ -40,19 +38,21 @@
 
 .address {
   display: flex;
+  flex-direction: column;
   line-height: 24.3px;
   font-style: normal;
   letter-spacing: 0.18px;
   font-size: 18px;
 }
 
-.header__address {
-  padding-right: 59px;
-  justify-content: end;
+.address__link {
+  letter-spacing: 0.18px;
+  text-underline-offset: 3px;
 }
 
-.header__address_no_bullit {
-  list-style-type: none;
+.header__address {
+  justify-self: end;
+  padding-right: 33px;
 }
 
 .cover {
@@ -111,10 +111,8 @@
 
 .cover__description-text {
   font-weight: 400;
-
   word-spacing: 18.5px;
   align-self: center;
-
   padding-left: 79px;
 }
 
@@ -173,19 +171,16 @@
 
 .card_type_film {
   position: relative;
-
   background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
   position: relative;
-
   background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
   position: relative;
-
   background-image: url(../images/card-lot-03.jpg);
 }
 
@@ -257,12 +252,8 @@
 
 .footer {
   display: grid;
-  padding: 80px 26px 70px 24px;
+  padding: 80px 50px 90px;
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-.footer__address {
-  padding-left: 27px;
 }
 
 .footer__menu {
@@ -280,14 +271,13 @@
   font-size: 18px;
 }
 
-.footer__menu-link {
-  text-decoration: none;
-  border-bottom: 1px #000 solid;
+.footer__link {
   letter-spacing: 0.18px;
+  text-underline-offset: 3px;
 }
 
 .footer__menu-link_active {
-  border-bottom: 0;
+  text-decoration: none;
 }
 
 .footer__social-list {
@@ -295,7 +285,6 @@
   list-style: none;
   gap: 48px;
   justify-content: end;
-  padding-right: 24px;
 }
 
 .footer__social-icon {
